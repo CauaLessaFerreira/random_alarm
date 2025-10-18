@@ -6,7 +6,7 @@ import time
 CURRENT_DIRECTORY = os.path.dirname(os.path.realpath(__file__))
 filename = os.path.join(CURRENT_DIRECTORY, "Assets/alarme.mp3")
 
-sorte = int(input("Digite um numero de 0 a 100 para escolher a chance"))
+sorte = int(input("Digite um numero de 0 a 100 para escolher a chance: "))
 atocado = False
 alarme = int(random.randrange(0, 100))
 
@@ -18,4 +18,5 @@ while atocado == False:
 
         break
     time.sleep(1)
+
 
