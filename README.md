@@ -1,6 +1,13 @@
-Este é um script Python simples que reproduz um som de alarme com base em uma probabilidade definida pelo usuário.
+# Alarme Aleatório
 
-Como funciona
-O script solicita que o usuário insira um número de 0 a 100, que representa a chance percentual de o alarme soar. Em seguida, ele gera um único número inteiro aleatório entre 0 e 99.
+Um simples programa em **Python** que toca um alarme aleatoriamente, com base em uma **chance definida pelo usuário**.  
+Ideal para simulações ou testes de alertas aleatórios.
 
-Em um loop que é executado a cada segundo, o script verifica se o número inserido pelo usuário é maior ou igual ao número gerado aleatoriamente. Se a condição for atendida, o som de alarme (alarme.mp3) é reproduzido, uma mensagem de confirmação é impressa e o programa é encerrado.
+---
+
+## Funcionalidades
+
+- Escolha uma **chance de disparo** de 0 a 100.
+- O programa gera um número aleatório e compara com sua escolha.
+- Se o número aleatório for menor ou igual à sua chance, o **alarme toca**.
+- Toca um arquivo de áudio `.mp3` usando a biblioteca `playsound3`.
